@@ -87,10 +87,25 @@ Realizar Login VÁLIDO e adicionar e remover item no carrinho
     Remover bike do carrinho
     Clicar em realizar checkout
     Preencher formulário de checkout
-    Validar formulário de pagamento
+    Validar formulário de pagamento da T-Shirt
 
 
+Realizar Login VÁLIDO e adicionar 3 itens
+    [Documentation]    CT para realização de login com dados válidos
+    ...                e adicionar pelo menos 2 itens e remover um item no carrinho de compras
+    ...                realizar checkout e preencher o formulário
+    [Tags]             3_itens
+    ${user}            factory_usuariook
 
+    Realizando login                               ${user}
+    Lista de produtos                              PRODUCTS 
+
+    Adicionar Jaqueta
+    clicar botão do carrinho
+    verificar quantidade
+    # Adicionar camisa baby
+    # adicionar T-shirt-Vermelha
+    # verificar se no carro tem 3 itens
 
 
 

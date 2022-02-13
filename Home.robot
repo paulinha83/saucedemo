@@ -12,31 +12,19 @@ Test Teardown    Finalizando sessão
 
 
 *Test Cases*
-Realizando login principal válido
-    [Tags]    login_valido
+Visualizar a página principal
+    Validar Título da página
+    Validação do formulário de autenticação
 
-    click        id=user-name    
-    fill text    id=user-name    standard_user
-
-    click        id=password    
-    fill text    id=password    secret_sauce
-
+Logar com usuário válido e válidar página principal
+     [Tags]             usr_ok
+    ${user}            factory_usuariook
+    Realizando login            ${user}    
+    Validar Título da página
+    Validar menu
+    Lista de produtos           PRODUCTS 
     Validar rodapé
+    Realizar Logout  
+    
 
-    clicar botão de Login
-
-
-Realizando Login INválido
-    [Tags]    login_invalido
-
-    # New Browser    Chromium        headless=False    slowMo=00:00:02
-    # New Page       ${BASE_URL}
-
-    click        id=user-name    
-    fill text    id=user-name    standard_user
-
-    click        id=password    
-    fill text    id=password    secret_sauce
-
-    clicar botão de Login
 

@@ -16,21 +16,25 @@ Lista de produtos
     wait for elements state    css=.product_sort_container    visible    5
     Get text                   css=.active_option             equal      NAME (A TO Z)
     wait for elements state    css=.inventory_list            visible    5
-    Validar rodapé
+    wait for elements state     //div[@class='inventory_container']     visible         5
 
 Verificar carrinho vazio
     wait for elements state    id=cart_contents_container            visible    5
-    wait for elements state    xpath=//div[@class='cart_item'][1]    hidden     5    
+    Get Element Count          xpath=//div[@class='cart_item'][1]    equal      0    
 
 
 Validar lista de produto com usuário problemático
-    wait for elements state    id=item_4_img_link    visible    5
-    #https://www.saucedemo.com/static/media/sl-404.168b1cce.jpg
+    wait for elements state    id=item_4_img_link                                                 visible    5
+    log to console             11
+    get text                   //div[@class='inventory_item_name'] >> text=Sauce Labs Backpack    equal      Sauce Labs Backpack
+    log to console             aa
+
+    get text    //div[contains(text(),'Sauce Labs Backpack')]//..//..//..//..//div[@class='inventory_item_price']    should start with    $
+    get text    //div[contains(text(),'Sauce Labs Backpack')]//..//..//..//..//div[@class='inventory_item_price']    equal                $29.99
 
 
-Validar rodapé
-    wait for elements state    css=.social_twitter >> text=Twitter
-    Get text                   css=.footer_copy                       equal    © 2022 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+
+
 
 
 Realizando login
@@ -62,9 +66,6 @@ Realizando login válido
 clicar botão de Login
     click    id=login-button
 
-
-
-
 Validar mensagem de erro
     [Arguments]                ${msg}
     wait for elements state    css=.error-button          visible     5
@@ -76,7 +77,6 @@ clicar botão do carrinho
     Click    css=.shopping_cart_link
 
 Clicar o botão e adicionar bike no carrinho
-
     wait for elements state                xpath=//button[@id='add-to-cart-sauce-labs-bike-light']     visible    5
     wait for elements state                xpath=//button[@id='add-to-cart-sauce-labs-bike-light']     enabled    5
     click                                  xpath=//button[@id='add-to-cart-sauce-labs-bike-light'] 
@@ -85,15 +85,10 @@ Clicar o botão e adicionar bike no carrinho
     get text                               css=.inventory_item_name                                    equal      Sauce Labs Bike Light
     Validar formulário de meu carrinho 
 
-
 Adicionar T-Shirt no carrinho
-
-    Click    //div[@class="inventory_list"]
-   # get text                               css=.inventory_item_name                                    equal      Sauce Labs Bolt T-Shirt
-
-    Click    xpath=(//img[@class="inventory_item_img"])[3]
-    Click    //div[@class="inventory_details_name large_size"]
-
+    Click                                                //div[@class="inventory_list"]
+    Click                                                xpath=(//img[@class="inventory_item_img"])[3]
+    Click                                                //div[@class="inventory_details_name large_size"]
     Click                                                //div[@class="inventory_details_desc large_size"]
     Click                                                //div[@class="inventory_details_price"]
     Click                                                //button[@name="add-to-cart-sauce-labs-bolt-t-shirt"]
@@ -101,6 +96,7 @@ Adicionar T-Shirt no carrinho
 
 Clicar em voltar para lista de todos os produtos
     click    id=back-to-products
+
 Validar formulário de meu carrinho
     wait for elements state    css=.bm-burger-button              visible    5
     wait for elements state    css=.app_logo                      visible    5
@@ -113,16 +109,12 @@ Validar formulário de meu carrinho
 
 
 Validar carrinho com pelo menos 1 item
-    #wait for elements state    css=.cart_item    visible    5
-    #wait for elements state    css=.cart_quantity    readonly    5
-
-    wait for elements state    css=.inventory_item_name              visible    5
-    wait for elements state    css=.inventory_item_desc              visible    5    
-    wait for elements state    xpath=//div[@class='cart_item'][1]    visible    5
-
-    get text    //button[@id='remove-sauce-labs-bike-light'] >> text=Remove
-    Get text    //button[@id='continue-shopping'] >> text=Continue Shopping
-    Get text    id=checkout >> text=Checkout
+    wait for elements state    css=.inventory_item_name                                       visible    5
+    wait for elements state    css=.inventory_item_desc                                       visible    5    
+    wait for elements state    xpath=//div[@class='cart_item'][1]                             visible    5
+    get text                   //button[@id='remove-sauce-labs-bike-light'] >> text=Remove
+    Get text                   //button[@id='continue-shopping'] >> text=Continue Shopping
+    Get text                   id=checkout >> text=Checkout
 
 Clicar em continuar no shopping
     Get text    //button[@id='continue-shopping'] >> text=Continue Shopping
@@ -137,39 +129,38 @@ Clicar em realizar checkout
     get text                   id=checkout >> text=Checkout
     click                      id=checkout
     wait for elements state    id=first-name                   visible    5    
-    # get text                   id=first-name >> name=firstName
-    # get text                   id=last-name >> name=lastName
-    # get text                   id=postal-code >> name=postalCode
 
 Preencher formulário de checkout
     click        id=first-name 
     fill text    id=first-name     Paula
-
     click        id=last-name 
-    fill text    id=last-name     Onofre
-
+    fill text    id=last-name      Onofre
     click        id=postal-code
     fill text    id=postal-code    58000000
+    click        id=continue
 
-    click    id=continue
+Validar formulário de pagamento da T-Shirt
+    wait for elements state    //div[@class='summary_info_label'][1]     visible                                                                               5
+    get text                   //div[@class='summary_info_label'][1]     equal                                                                                 Payment Information:
+    get text                   //div[@class='summary_value_label'][1]    contains                                                                              SauceCard #
+    get text                   //div[@class='summary_info_label'][2]     equal                                                                                 Shipping Information:
+    get text                   //div[@class='summary_value_label'][2]    equal                                                                                 FREE PONY EXPRESS DELIVERY!
+    ${valor}                   Set Variable                              xpath=//div[@class='cart_item']/div[2]//div[@class='item_pricebar'] >> text=$15.99    
+    get text                   ${valor}                                  equal                                                                                 $15.99                         
+    Wait For Elements State    ${valor}                                  visible                                                                               5
+    get text                   css=.summary_tax_label                    contains                                                                              Tax: $
+    get text                   css=.summary_total_label                  contains                                                                              Total: $
 
-Validar formulário de pagamento
-    wait for elements state    //div[@class='summary_info_label'][1]     visible     5
-    get text                   //div[@class='summary_info_label'][1]     equal       Payment Information:
-    get text                   //div[@class='summary_value_label'][1]    contains    SauceCard #
+Adicionar Jaqueta
+    click                       xpath=//body/div[@id='root']/div[@id='page_wrapper']/div[@id='contents_wrapper']/div[@id='inventory_container']/div[1]/div[1]/div[1]/div[4]/div[1]/a[1]/img[1]
+    wait for elements state     css=.inventory_details_desc large_size      visible     5
+    get text                    css=.inventory_details_desc large_size                                                                                                                            equal        It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.
+    get text                    css=.inventory_details_price                                                                                                                                      equal        $49.99
+    get text                    //button[@id='add-to-cart-sauce-labs-fleece-jacket']                                                                                                              equal        Add to cart
+    wait form elements state    //button[@id='add-to-cart-sauce-labs-fleece-jacket']                                                                                                              visible 5
+    Click                       //button[@id='add-to-cart-sauce-labs-fleece-jacket']
+    get text                    remove-sauce-labs-fleece-jacket                                                                                                                                   equal        Remove
 
-    Mouse Move Relative To    css=.summary_total_label    -200
-    Mouse Move                400                         400
-    sleep                     5
 
-
-    get text          //div[@class='summary_info_label'][2]     equal    Shipping Information:
-    get text          //div[@class='summary_value_label'][2]    equal    FREE PONY EXPRESS DELIVERY!
-    log to console    paulaaaa
-    Mouse Button      down 
-    sleep             2
-
-    get text    css=.summary_subtotal_label    contains    Item total: $
-    get text    css=.summary_tax_label         contains    Tax: $
-    get text    css=.summary_total_label       contains    Total: $
-
+verificar quantidade
+    Get Element Count    //div[@class='cart_list']    ==    1

@@ -1,6 +1,10 @@
 from faker import Faker
 fake = Faker()
 
+
+def screenshot_name():
+    return fake.sha1()
+    
 def factory_usuarioFaker():
     user = {
 
