@@ -1,6 +1,7 @@
 *Settings*
 Documentation    Minha primeira suíte de teste do site https://www.saucedemo.com/
 ...              Testando a primeira página.
+...         https://www.saucedemo.com/
 
 
 Resource    ${EXECDIR}/resources/Base.robot
