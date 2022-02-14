@@ -92,20 +92,43 @@ Realizar Login VÁLIDO e adicionar e remover item no carrinho
 
 Realizar Login VÁLIDO e adicionar 3 itens
     [Documentation]    CT para realização de login com dados válidos
-    ...                e adicionar pelo menos 2 itens e remover um item no carrinho de compras
-    ...                realizar checkout e preencher o formulário
+    ...                e adicionar pelo menos 3 itens e validar carrinho
     [Tags]             3_itens
-    ${user}            factory_usuariook
+    ${user}             factory_usuariook
+  
 
     Realizando login                               ${user}
     Lista de produtos                              PRODUCTS 
 
-    Adicionar Jaqueta
-    clicar botão do carrinho
-    verificar quantidade
-    # Adicionar camisa baby
-    # adicionar T-shirt-Vermelha
-    # verificar se no carro tem 3 itens
+    
+    Escolher o Produto      Sauce Labs Fleece Jacket
+    clicar botão adicionar no carrinho
+    clicar para voltar e listar todos os produtos 
+ 
+    Escolher o Produto      Sauce Labs Onesie    
+    clicar botão adicionar no carrinho
+    clicar para voltar e listar todos os produtos 
 
+    Escolher o Produto      Test.allTheThings() T-Shirt (Red)
+    clicar botão adicionar no carrinho
+    clicar para voltar e listar todos os produtos
+
+    clicar botão do carrinho
+    Validar quantidade no carrinho      3
+
+    Clicar em realizar checkout
+    Preencher formulário de checkout
+    clicar no botão continue 
+    validar recibo de pagamento 
+
+
+
+
+
+
+# Teste 
+#     [Tags]  aa
+    
+    
 
 

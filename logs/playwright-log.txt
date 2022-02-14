@@ -1,48 +1,84 @@
-{"level":30,"time":"2022-02-13T21:23:00.093Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Listening on 62760"}
-{"level":30,"time":"2022-02-13T21:23:00.662Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"currentBrowser: [object Object]"}
-{"level":30,"time":"2022-02-13T21:23:00.706Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changed active context"}
-{"level":30,"time":"2022-02-13T21:23:01.105Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Video path: undefined"}
-{"level":30,"time":"2022-02-13T21:23:01.106Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changed active page"}
-{"level":30,"time":"2022-02-13T21:23:03.722Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=user-name"}
-{"level":30,"time":"2022-02-13T21:23:04.789Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=user-name"}
-{"level":30,"time":"2022-02-13T21:23:05.828Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=password"}
-{"level":30,"time":"2022-02-13T21:23:06.871Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=password"}
-{"level":30,"time":"2022-02-13T21:23:07.905Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=login-button"}
-{"level":30,"time":"2022-02-13T21:23:09.073Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //button[@id='react-burger-menu-btn']"}
-{"level":30,"time":"2022-02-13T21:23:09.109Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //button[@id='react-burger-menu-btn']"}
-{"level":30,"time":"2022-02-13T21:23:10.164Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class='bm-menu-wrap']"}
-{"level":30,"time":"2022-02-13T21:23:10.211Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.242Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='bm-menu'] >> text=All Items containing ALL ITEMS"}
-{"level":30,"time":"2022-02-13T21:23:10.244Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.261Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='bm-menu'] >> text=About containing ABOUT"}
-{"level":30,"time":"2022-02-13T21:23:10.263Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.278Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='bm-menu'] >> text=Logout containing LOGOUT"}
-{"level":30,"time":"2022-02-13T21:23:10.280Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.296Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='bm-menu'] >> text=Reset App State containing RESET APP STATE"}
-{"level":30,"time":"2022-02-13T21:23:10.299Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.title"}
-{"level":30,"time":"2022-02-13T21:23:10.319Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.337Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element css=.title containing PRODUCTS"}
-{"level":30,"time":"2022-02-13T21:23:10.339Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=react-burger-menu-btn"}
-{"level":30,"time":"2022-02-13T21:23:10.352Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.peek"}
-{"level":30,"time":"2022-02-13T21:23:10.365Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.product_sort_container"}
-{"level":30,"time":"2022-02-13T21:23:10.377Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.392Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element css=.active_option containing NAME (A TO Z)"}
-{"level":30,"time":"2022-02-13T21:23:10.394Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.inventory_list"}
-{"level":30,"time":"2022-02-13T21:23:10.407Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class='inventory_container']"}
-{"level":30,"time":"2022-02-13T21:23:10.420Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //footer[@class='footer']"}
-{"level":30,"time":"2022-02-13T21:23:10.435Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.social_twitter >> text=Twitter"}
-{"level":30,"time":"2022-02-13T21:23:10.451Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //a[contains(text(),'Twitter')]"}
-{"level":30,"time":"2022-02-13T21:23:10.464Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //a[contains(text(),'Facebook')]"}
-{"level":30,"time":"2022-02-13T21:23:10.475Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //a[contains(text(),'LinkedIn')]"}
-{"level":30,"time":"2022-02-13T21:23:10.488Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //body/div[@id='root']/div[@id='page_wrapper']/footer[1]/img[1]"}
-{"level":30,"time":"2022-02-13T21:23:10.501Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.516Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element css=.footer_copy containing © 2022 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy"}
-{"level":30,"time":"2022-02-13T21:23:10.519Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
-{"level":30,"time":"2022-02-13T21:23:10.538Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='bm-menu'] >> text=Logout containing LOGOUT"}
-{"level":30,"time":"2022-02-13T21:23:10.541Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class='bm-menu'] >> text=Logout"}
-{"level":30,"time":"2022-02-13T21:23:13.874Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changed active context"}
-{"level":30,"time":"2022-02-13T21:23:13.874Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-13T21:23:13.875Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changed active page"}
-{"level":30,"time":"2022-02-13T21:23:13.905Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changed active context"}
-{"level":30,"time":"2022-02-13T21:23:13.905Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changing current active page"}
-{"level":30,"time":"2022-02-13T21:23:13.905Z","pid":108,"hostname":"DESKTOP-UD48917","msg":"Changed active page"}
+{"level":30,"time":"2022-02-14T21:11:17.277Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Listening on 54089"}
+{"level":30,"time":"2022-02-14T21:11:17.898Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2022-02-14T21:11:17.952Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changed active context"}
+{"level":30,"time":"2022-02-14T21:11:18.497Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Video path: undefined"}
+{"level":30,"time":"2022-02-14T21:11:18.497Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changed active page"}
+{"level":30,"time":"2022-02-14T21:11:21.421Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=user-name"}
+{"level":30,"time":"2022-02-14T21:11:22.492Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=user-name"}
+{"level":30,"time":"2022-02-14T21:11:23.522Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=password"}
+{"level":30,"time":"2022-02-14T21:11:24.568Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=password"}
+{"level":30,"time":"2022-02-14T21:11:25.593Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=login-button"}
+{"level":30,"time":"2022-02-14T21:11:26.723Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.title"}
+{"level":30,"time":"2022-02-14T21:11:26.747Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:26.767Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element css=.title containing PRODUCTS"}
+{"level":30,"time":"2022-02-14T21:11:26.770Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=react-burger-menu-btn"}
+{"level":30,"time":"2022-02-14T21:11:26.786Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.peek"}
+{"level":30,"time":"2022-02-14T21:11:26.802Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.product_sort_container"}
+{"level":30,"time":"2022-02-14T21:11:26.815Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:26.832Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element css=.active_option containing NAME (A TO Z)"}
+{"level":30,"time":"2022-02-14T21:11:26.835Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.inventory_list"}
+{"level":30,"time":"2022-02-14T21:11:26.854Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class='inventory_container']"}
+{"level":30,"time":"2022-02-14T21:11:26.869Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class=\"inventory_item_name\"] >> text=Sauce Labs Fleece Jacket"}
+{"level":30,"time":"2022-02-14T21:11:26.888Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:26.905Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class=\"inventory_item_name\"] >> text=Sauce Labs Fleece Jacket containing Sauce Labs Fleece Jacket"}
+{"level":30,"time":"2022-02-14T21:11:26.908Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class=\"inventory_item_name\"] >> text=Sauce Labs Fleece Jacket"}
+{"level":30,"time":"2022-02-14T21:11:27.964Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: xpath=//button[@class='btn btn_primary btn_small btn_inventory'] >> text=Add to cart"}
+{"level":30,"time":"2022-02-14T21:11:29.005Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //button[@id='back-to-products']"}
+{"level":30,"time":"2022-02-14T21:11:30.075Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class=\"inventory_item_name\"] >> text=Sauce Labs Onesie"}
+{"level":30,"time":"2022-02-14T21:11:30.098Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:30.117Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class=\"inventory_item_name\"] >> text=Sauce Labs Onesie containing Sauce Labs Onesie"}
+{"level":30,"time":"2022-02-14T21:11:30.120Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class=\"inventory_item_name\"] >> text=Sauce Labs Onesie"}
+{"level":30,"time":"2022-02-14T21:11:31.190Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: xpath=//button[@class='btn btn_primary btn_small btn_inventory'] >> text=Add to cart"}
+{"level":30,"time":"2022-02-14T21:11:32.242Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //button[@id='back-to-products']"}
+{"level":30,"time":"2022-02-14T21:11:33.324Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class=\"inventory_item_name\"] >> text=Test.allTheThings() T-Shirt (Red)"}
+{"level":30,"time":"2022-02-14T21:11:33.345Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:33.365Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class=\"inventory_item_name\"] >> text=Test.allTheThings() T-Shirt (Red) containing Test.allTheThings() T-Shirt (Red)"}
+{"level":30,"time":"2022-02-14T21:11:33.367Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class=\"inventory_item_name\"] >> text=Test.allTheThings() T-Shirt (Red)"}
+{"level":30,"time":"2022-02-14T21:11:34.474Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: xpath=//button[@class='btn btn_primary btn_small btn_inventory'] >> text=Add to cart"}
+{"level":30,"time":"2022-02-14T21:11:35.516Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //button[@id='back-to-products']"}
+{"level":30,"time":"2022-02-14T21:11:36.590Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: css=.shopping_cart_link"}
+{"level":30,"time":"2022-02-14T21:11:37.656Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class='cart_item']"}
+{"level":30,"time":"2022-02-14T21:11:37.678Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=checkout"}
+{"level":30,"time":"2022-02-14T21:11:37.693Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:37.714Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element id=checkout >> text=Checkout containing CHECKOUT"}
+{"level":30,"time":"2022-02-14T21:11:37.716Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=checkout"}
+{"level":30,"time":"2022-02-14T21:11:38.776Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=first-name"}
+{"level":30,"time":"2022-02-14T21:11:38.795Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=first-name"}
+{"level":30,"time":"2022-02-14T21:11:39.831Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=first-name"}
+{"level":30,"time":"2022-02-14T21:11:40.864Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=last-name"}
+{"level":30,"time":"2022-02-14T21:11:41.911Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=last-name"}
+{"level":30,"time":"2022-02-14T21:11:42.945Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=postal-code"}
+{"level":30,"time":"2022-02-14T21:11:43.998Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: id=postal-code"}
+{"level":30,"time":"2022-02-14T21:11:45.034Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //input[@id='continue']"}
+{"level":30,"time":"2022-02-14T21:11:46.107Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[@class='summary_info_label'][1]"}
+{"level":30,"time":"2022-02-14T21:11:46.125Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:46.144Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='summary_info_label'][1] containing Payment Information:"}
+{"level":30,"time":"2022-02-14T21:11:46.147Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:46.164Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='summary_value_label'][1] containing SauceCard #31337"}
+{"level":30,"time":"2022-02-14T21:11:46.166Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:46.181Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='summary_info_label'][2] containing Shipping Information:"}
+{"level":30,"time":"2022-02-14T21:11:46.183Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:46.200Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element //div[@class='summary_value_label'][2] containing FREE PONY EXPRESS DELIVERY!"}
+{"level":30,"time":"2022-02-14T21:11:46.202Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:46.220Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element css=.summary_tax_label containing Tax: $5.92"}
+{"level":30,"time":"2022-02-14T21:11:46.222Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Strict mode is: true"}
+{"level":30,"time":"2022-02-14T21:11:46.237Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Retrieved text for element css=.summary_total_label containing Total: $79.89"}
+{"level":30,"time":"2022-02-14T21:11:46.240Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Page|Frame|Element resolved elementSelector: //div[contains(text(),\"Sauce Labs Bike Light\")]//..//..//..//div[@class=\"inventory_item_price\"]"}
+================= Original suppressed error =================
+page.waitForSelector: Timeout 8000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[contains(text(),"Sauce Labs Bike Light")]//..//..//..//div[@class="inventory_item_price"]" to be visible
+============================================================
+    at C:\Users\Paula\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26427:45
+    at step (C:\Users\Paula\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26310:23)
+    at Object.next (C:\Users\Paula\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26291:53)
+    at fulfilled (C:\Users\Paula\AppData\Local\Programs\Python\Python39\lib\site-packages\Browser\wrapper\index.js:26282:58) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2022-02-14T21:11:56.742Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changed active context"}
+{"level":30,"time":"2022-02-14T21:11:56.743Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-14T21:11:56.744Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changed active page"}
+{"level":30,"time":"2022-02-14T21:11:56.765Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changed active context"}
+{"level":30,"time":"2022-02-14T21:11:56.765Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changing current active page"}
+{"level":30,"time":"2022-02-14T21:11:56.765Z","pid":13328,"hostname":"DESKTOP-UD48917","msg":"Changed active page"}

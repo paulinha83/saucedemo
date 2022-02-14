@@ -57,4 +57,12 @@ def factory_prt_Onesie():
     }
     return user
 
+def factory_prt_Jaketa():
+    user = {
+
+        "nome":"Sauce Labs Fleece Jacket",
+        "descrição": "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office.",
+        "valor":"$ 49.99"
+    }
+    return user
 

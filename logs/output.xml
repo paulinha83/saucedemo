@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20220213 18:22:59.133" rpa="false" schemaversion="2">
-<suite id="s1" name="Home" source="D:\qafullstack\Git\saucedemo\Home.robot">
-<test id="s1-t1" name="Logar com usuário válido e válidar página principal">
+<robot generator="Robot 4.1.1 (Python 3.9.7 on win32)" generated="20220214 18:11:16.241" rpa="false" schemaversion="2">
+<suite id="s1" name="User" source="D:\qafullstack\Git\saucedemo\User.robot">
+<test id="s1-t1" name="Realizar Login VÁLIDO e adicionar 3 itens">
 <kw name="Iniciando sessão" library="Base" type="SETUP">
 <kw name="New Browser" library="Browser">
 <arg>Chromium</arg>
@@ -10,9 +10,9 @@
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Create a new playwright Browser with specified options.</doc>
-<msg timestamp="20220213 18:23:00.207" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "D:\\qafullstack\\Git\\saucedemo\\logs\\browser\\traces\\71a630cb-e4aa-432f-bf8b-7a5436f4092a"}</msg>
-<msg timestamp="20220213 18:23:00.659" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"D:\\qafullstack\\Git\\saucedemo\\logs\\browser\\traces\\71a630cb-e4aa-432f-bf8b-7a5436f4092a"}</msg>
-<status status="PASS" starttime="20220213 18:23:00.207" endtime="20220213 18:23:00.659"/>
+<msg timestamp="20220214 18:11:17.318" level="INFO">{"browser": "chromium", "headless": false, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 1000.0, "tracesDir": "D:\\qafullstack\\Git\\saucedemo\\logs\\browser\\traces\\6c907250-7900-4e9f-b50b-30e61e604e37"}</msg>
+<msg timestamp="20220214 18:11:17.894" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":1000,"tracesDir":"D:\\qafullstack\\Git\\saucedemo\\logs\\browser\\traces\\6c907250-7900-4e9f-b50b-30e61e604e37"}</msg>
+<status status="PASS" starttime="20220214 18:11:17.317" endtime="20220214 18:11:17.894"/>
 </kw>
 <kw name="New Page" library="Browser">
 <arg>${BASE_URL}</arg>
@@ -21,9 +21,9 @@
 <doc>Open a new Page. A Page is the Playwright equivalent to a tab.
 See `Browser, Context and Page` for more information about Page concept.
 Returns a stable identifier for the created page.</doc>
-<msg timestamp="20220213 18:23:02.637" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
-<msg timestamp="20220213 18:23:02.637" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
-<status status="PASS" starttime="20220213 18:23:00.659" endtime="20220213 18:23:02.638"/>
+<msg timestamp="20220214 18:11:20.366" level="INFO">Successfully initialized new page object and opened url: https://www.saucedemo.com</msg>
+<msg timestamp="20220214 18:11:20.366" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20220214 18:11:17.895" endtime="20220214 18:11:20.366"/>
 </kw>
 <kw name="Set Viewport Size" library="Browser">
 <arg>1280</arg>
@@ -31,8 +31,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>BrowserControl</tag>
 <tag>Setter</tag>
 <doc>Sets current Pages viewport size to specified dimensions.</doc>
-<msg timestamp="20220213 18:23:03.684" level="INFO">Set viewport size to: [object Object]</msg>
-<status status="PASS" starttime="20220213 18:23:02.638" endtime="20220213 18:23:03.684"/>
+<msg timestamp="20220214 18:11:21.392" level="INFO">Set viewport size to: [object Object]</msg>
+<status status="PASS" starttime="20220214 18:11:20.367" endtime="20220214 18:11:21.392"/>
 </kw>
 <kw name="Get Title" library="Browser">
 <arg>equal</arg>
@@ -41,14 +41,14 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220213 18:23:03.685" endtime="20220213 18:23:03.713"/>
+<status status="PASS" starttime="20220214 18:11:21.393" endtime="20220214 18:11:21.410"/>
 </kw>
-<status status="PASS" starttime="20220213 18:23:00.206" endtime="20220213 18:23:03.714"/>
+<status status="PASS" starttime="20220214 18:11:17.316" endtime="20220214 18:11:21.410"/>
 </kw>
 <kw name="Factory Usuariook" library="Users">
 <var>${user}</var>
-<msg timestamp="20220213 18:23:03.716" level="INFO">${user} = {'name': 'standard_user', 'senha': 'secret_sauce'}</msg>
-<status status="PASS" starttime="20220213 18:23:03.715" endtime="20220213 18:23:03.716"/>
+<msg timestamp="20220214 18:11:21.414" level="INFO">${user} = {'name': 'standard_user', 'senha': 'secret_sauce'}</msg>
+<status status="PASS" starttime="20220214 18:11:21.414" endtime="20220214 18:11:21.414"/>
 </kw>
 <kw name="Realizando login" library="Actions">
 <arg>${user}</arg>
@@ -58,7 +58,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:03.717" endtime="20220213 18:23:04.787"/>
+<status status="PASS" starttime="20220214 18:11:21.415" endtime="20220214 18:11:22.489"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=user-name</arg>
@@ -66,15 +66,15 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220213 18:23:04.787" level="INFO">Fills the text 'standard_user' in the given field.</msg>
-<status status="PASS" starttime="20220213 18:23:04.787" endtime="20220213 18:23:05.827"/>
+<msg timestamp="20220214 18:11:22.490" level="INFO">Fills the text 'standard_user' in the given field.</msg>
+<status status="PASS" starttime="20220214 18:11:22.490" endtime="20220214 18:11:23.520"/>
 </kw>
 <kw name="Click" library="Browser">
 <arg>id=password</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:05.827" endtime="20220213 18:23:06.870"/>
+<status status="PASS" starttime="20220214 18:11:23.521" endtime="20220214 18:11:24.567"/>
 </kw>
 <kw name="Fill Text" library="Browser">
 <arg>id=password</arg>
@@ -82,8 +82,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
-<msg timestamp="20220213 18:23:06.870" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
-<status status="PASS" starttime="20220213 18:23:06.870" endtime="20220213 18:23:07.903"/>
+<msg timestamp="20220214 18:11:24.568" level="INFO">Fills the text 'secret_sauce' in the given field.</msg>
+<status status="PASS" starttime="20220214 18:11:24.568" endtime="20220214 18:11:25.591"/>
 </kw>
 <kw name="clicar botão de Login" library="Actions">
 <kw name="Click" library="Browser">
@@ -91,121 +91,11 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:07.904" endtime="20220213 18:23:09.027"/>
+<status status="PASS" starttime="20220214 18:11:25.592" endtime="20220214 18:11:26.718"/>
 </kw>
-<status status="PASS" starttime="20220213 18:23:07.904" endtime="20220213 18:23:09.027"/>
+<status status="PASS" starttime="20220214 18:11:25.592" endtime="20220214 18:11:26.718"/>
 </kw>
-<status status="PASS" starttime="20220213 18:23:03.716" endtime="20220213 18:23:09.028"/>
-</kw>
-<kw name="Validar Título da página" library="ActionsHome">
-<kw name="Get Title" library="Browser">
-<arg>==</arg>
-<arg>Swag Labs</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220213 18:23:09.031" endtime="20220213 18:23:09.045"/>
-</kw>
-<kw name="Get Title" library="Browser">
-<arg>equal</arg>
-<arg>Swag Labs</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220213 18:23:09.046" endtime="20220213 18:23:09.054"/>
-</kw>
-<kw name="Get Title" library="Browser">
-<arg>should be</arg>
-<arg>Swag Labs</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220213 18:23:09.054" endtime="20220213 18:23:09.060"/>
-</kw>
-<kw name="Get Title" library="Browser">
-<arg>equal</arg>
-<arg>Swag Labs</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220213 18:23:09.060" endtime="20220213 18:23:09.064"/>
-</kw>
-<kw name="Get Title" library="Browser">
-<arg>should start with</arg>
-<arg>Swag Labs</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns the title of the current page.</doc>
-<status status="PASS" starttime="20220213 18:23:09.064" endtime="20220213 18:23:09.069"/>
-</kw>
-<status status="PASS" starttime="20220213 18:23:09.030" endtime="20220213 18:23:09.069"/>
-</kw>
-<kw name="Validar menu" library="ActionsHome">
-<kw name="Wait For Elements State" library="Browser">
-<arg>//button[@id='react-burger-menu-btn']</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:09.107" level="INFO">Wait for Element with selector: //button[@id='react-burger-menu-btn']</msg>
-<status status="PASS" starttime="20220213 18:23:09.070" endtime="20220213 18:23:09.107"/>
-</kw>
-<kw name="Click" library="Browser">
-<arg>//button[@id='react-burger-menu-btn']</arg>
-<tag>PageContent</tag>
-<tag>Setter</tag>
-<doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:09.107" endtime="20220213 18:23:10.159"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>//div[@class='bm-menu-wrap']</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.205" level="INFO">Wait for Element with selector: //div[@class='bm-menu-wrap']</msg>
-<status status="PASS" starttime="20220213 18:23:10.160" endtime="20220213 18:23:10.205"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>//div[@class='bm-menu'] &gt;&gt; text=All Items</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.206" endtime="20220213 18:23:10.244"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>//div[@class='bm-menu'] &gt;&gt; text=About</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.244" endtime="20220213 18:23:10.261"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>//div[@class='bm-menu'] &gt;&gt; text=Logout</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.261" endtime="20220213 18:23:10.279"/>
-</kw>
-<kw name="Get Text" library="Browser">
-<arg>//div[@class='bm-menu'] &gt;&gt; text=Reset App State</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.279" endtime="20220213 18:23:10.297"/>
-</kw>
-<status status="PASS" starttime="20220213 18:23:09.070" endtime="20220213 18:23:10.297"/>
+<status status="PASS" starttime="20220214 18:11:21.415" endtime="20220214 18:11:26.718"/>
 </kw>
 <kw name="Lista de produtos" library="Actions">
 <arg>PRODUCTS</arg>
@@ -216,8 +106,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.317" level="INFO">Wait for Element with selector: css=.title</msg>
-<status status="PASS" starttime="20220213 18:23:10.298" endtime="20220213 18:23:10.317"/>
+<msg timestamp="20220214 18:11:26.744" level="INFO">Wait for Element with selector: css=.title</msg>
+<status status="PASS" starttime="20220214 18:11:26.720" endtime="20220214 18:11:26.745"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>css=.title</arg>
@@ -227,7 +117,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.317" endtime="20220213 18:23:10.338"/>
+<status status="PASS" starttime="20220214 18:11:26.745" endtime="20220214 18:11:26.769"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>id=react-burger-menu-btn</arg>
@@ -236,8 +126,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.351" level="INFO">Wait for Element with selector: id=react-burger-menu-btn</msg>
-<status status="PASS" starttime="20220213 18:23:10.338" endtime="20220213 18:23:10.351"/>
+<msg timestamp="20220214 18:11:26.784" level="INFO">Wait for Element with selector: id=react-burger-menu-btn</msg>
+<status status="PASS" starttime="20220214 18:11:26.769" endtime="20220214 18:11:26.784"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.peek</arg>
@@ -246,8 +136,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.364" level="INFO">Wait for Element with selector: css=.peek</msg>
-<status status="PASS" starttime="20220213 18:23:10.352" endtime="20220213 18:23:10.364"/>
+<msg timestamp="20220214 18:11:26.800" level="INFO">Wait for Element with selector: css=.peek</msg>
+<status status="PASS" starttime="20220214 18:11:26.785" endtime="20220214 18:11:26.800"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.product_sort_container</arg>
@@ -256,8 +146,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.377" level="INFO">Wait for Element with selector: css=.product_sort_container</msg>
-<status status="PASS" starttime="20220213 18:23:10.364" endtime="20220213 18:23:10.377"/>
+<msg timestamp="20220214 18:11:26.814" level="INFO">Wait for Element with selector: css=.product_sort_container</msg>
+<status status="PASS" starttime="20220214 18:11:26.800" endtime="20220214 18:11:26.814"/>
 </kw>
 <kw name="Get Text" library="Browser">
 <arg>css=.active_option</arg>
@@ -267,7 +157,7 @@ Returns a stable identifier for the created page.</doc>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.377" endtime="20220213 18:23:10.393"/>
+<status status="PASS" starttime="20220214 18:11:26.814" endtime="20220214 18:11:26.834"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>css=.inventory_list</arg>
@@ -276,8 +166,8 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.406" level="INFO">Wait for Element with selector: css=.inventory_list</msg>
-<status status="PASS" starttime="20220213 18:23:10.393" endtime="20220213 18:23:10.406"/>
+<msg timestamp="20220214 18:11:26.852" level="INFO">Wait for Element with selector: css=.inventory_list</msg>
+<status status="PASS" starttime="20220214 18:11:26.834" endtime="20220214 18:11:26.852"/>
 </kw>
 <kw name="Wait For Elements State" library="Browser">
 <arg>//div[@class='inventory_container']</arg>
@@ -286,130 +176,499 @@ Returns a stable identifier for the created page.</doc>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.418" level="INFO">Wait for Element with selector: //div[@class='inventory_container']</msg>
-<status status="PASS" starttime="20220213 18:23:10.406" endtime="20220213 18:23:10.418"/>
+<msg timestamp="20220214 18:11:26.867" level="INFO">Wait for Element with selector: //div[@class='inventory_container']</msg>
+<status status="PASS" starttime="20220214 18:11:26.852" endtime="20220214 18:11:26.867"/>
 </kw>
-<status status="PASS" starttime="20220213 18:23:10.298" endtime="20220213 18:23:10.418"/>
+<status status="PASS" starttime="20220214 18:11:26.719" endtime="20220214 18:11:26.867"/>
 </kw>
-<kw name="Validar rodapé" library="ActionsHome">
+<kw name="Escolher o Produto" library="Actions">
+<arg>Sauce Labs Fleece Jacket</arg>
 <kw name="Wait For Elements State" library="Browser">
-<arg>//footer[@class='footer']</arg>
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
 <arg>visible</arg>
 <arg>5</arg>
 <tag>PageContent</tag>
 <tag>Wait</tag>
 <doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.434" level="INFO">Wait for Element with selector: //footer[@class='footer']</msg>
-<status status="PASS" starttime="20220213 18:23:10.418" endtime="20220213 18:23:10.434"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>css=.social_twitter &gt;&gt; text=Twitter</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.450" level="INFO">Wait for Element with selector: css=.social_twitter &gt;&gt; text=Twitter</msg>
-<status status="PASS" starttime="20220213 18:23:10.434" endtime="20220213 18:23:10.450"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>//a[contains(text(),'Twitter')]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.463" level="INFO">Wait for Element with selector: //a[contains(text(),'Twitter')]</msg>
-<status status="PASS" starttime="20220213 18:23:10.450" endtime="20220213 18:23:10.463"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>//a[contains(text(),'Facebook')]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.475" level="INFO">Wait for Element with selector: //a[contains(text(),'Facebook')]</msg>
-<status status="PASS" starttime="20220213 18:23:10.463" endtime="20220213 18:23:10.475"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>//a[contains(text(),'LinkedIn')]</arg>
-<arg>visible</arg>
-<arg>5</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.487" level="INFO">Wait for Element with selector: //a[contains(text(),'LinkedIn')]</msg>
-<status status="PASS" starttime="20220213 18:23:10.475" endtime="20220213 18:23:10.487"/>
-</kw>
-<kw name="Wait For Elements State" library="Browser">
-<arg>//body/div[@id='root']/div[@id='page_wrapper']/footer[1]/img[1]</arg>
-<tag>PageContent</tag>
-<tag>Wait</tag>
-<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
-<msg timestamp="20220213 18:23:10.500" level="INFO">Wait for Element with selector: //body/div[@id='root']/div[@id='page_wrapper']/footer[1]/img[1]</msg>
-<status status="PASS" starttime="20220213 18:23:10.487" endtime="20220213 18:23:10.500"/>
+<msg timestamp="20220214 18:11:26.886" level="INFO">Wait for Element with selector: //div[@class="inventory_item_name"] &gt;&gt; text=Sauce Labs Fleece Jacket</msg>
+<status status="PASS" starttime="20220214 18:11:26.868" endtime="20220214 18:11:26.886"/>
 </kw>
 <kw name="Get Text" library="Browser">
-<arg>css=.footer_copy</arg>
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
 <arg>equal</arg>
-<arg>© 2022 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy</arg>
+<arg>${produto}</arg>
 <tag>Assertion</tag>
 <tag>Getter</tag>
 <tag>PageContent</tag>
 <doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.500" endtime="20220213 18:23:10.518"/>
-</kw>
-<status status="PASS" starttime="20220213 18:23:10.418" endtime="20220213 18:23:10.518"/>
-</kw>
-<kw name="Realizar Logout" library="ActionsHome">
-<kw name="Get Text" library="Browser">
-<arg>//div[@class='bm-menu'] &gt;&gt; text=Logout</arg>
-<tag>Assertion</tag>
-<tag>Getter</tag>
-<tag>PageContent</tag>
-<doc>Returns text attribute of the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.519" endtime="20220213 18:23:10.540"/>
+<status status="PASS" starttime="20220214 18:11:26.886" endtime="20220214 18:11:26.907"/>
 </kw>
 <kw name="Click" library="Browser">
-<arg>//div[@class='bm-menu'] &gt;&gt; text=Logout</arg>
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
 <tag>PageContent</tag>
 <tag>Setter</tag>
 <doc>Simulates mouse click on the element found by ``selector``.</doc>
-<status status="PASS" starttime="20220213 18:23:10.540" endtime="20220213 18:23:11.593"/>
+<status status="PASS" starttime="20220214 18:11:26.907" endtime="20220214 18:11:27.962"/>
 </kw>
-<status status="PASS" starttime="20220213 18:23:10.518" endtime="20220213 18:23:11.593"/>
+<status status="PASS" starttime="20220214 18:11:26.868" endtime="20220214 18:11:27.962"/>
+</kw>
+<kw name="clicar botão adicionar no carrinho" library="Actions">
+<kw name="Click" library="Browser">
+<arg>xpath=//button[@class='btn btn_primary btn_small btn_inventory'] &gt;&gt; text=Add to cart</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:27.963" endtime="20220214 18:11:29.002"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:27.963" endtime="20220214 18:11:29.002"/>
+</kw>
+<kw name="clicar para voltar e listar todos os produtos" library="Actions">
+<kw name="Click" library="Browser">
+<arg>//button[@id='back-to-products']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:29.003" endtime="20220214 18:11:30.071"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:29.003" endtime="20220214 18:11:30.071"/>
+</kw>
+<kw name="Escolher o Produto" library="Actions">
+<arg>Sauce Labs Onesie</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220214 18:11:30.095" level="INFO">Wait for Element with selector: //div[@class="inventory_item_name"] &gt;&gt; text=Sauce Labs Onesie</msg>
+<status status="PASS" starttime="20220214 18:11:30.073" endtime="20220214 18:11:30.096"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
+<arg>equal</arg>
+<arg>${produto}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:30.096" endtime="20220214 18:11:30.119"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:30.119" endtime="20220214 18:11:31.185"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:30.072" endtime="20220214 18:11:31.186"/>
+</kw>
+<kw name="clicar botão adicionar no carrinho" library="Actions">
+<kw name="Click" library="Browser">
+<arg>xpath=//button[@class='btn btn_primary btn_small btn_inventory'] &gt;&gt; text=Add to cart</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:31.188" endtime="20220214 18:11:32.236"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:31.187" endtime="20220214 18:11:32.236"/>
+</kw>
+<kw name="clicar para voltar e listar todos os produtos" library="Actions">
+<kw name="Click" library="Browser">
+<arg>//button[@id='back-to-products']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:32.239" endtime="20220214 18:11:33.320"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:32.238" endtime="20220214 18:11:33.321"/>
+</kw>
+<kw name="Escolher o Produto" library="Actions">
+<arg>Test.allTheThings() T-Shirt (Red)</arg>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220214 18:11:33.344" level="INFO">Wait for Element with selector: //div[@class="inventory_item_name"] &gt;&gt; text=Test.allTheThings() T-Shirt (Red)</msg>
+<status status="PASS" starttime="20220214 18:11:33.322" endtime="20220214 18:11:33.344"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
+<arg>equal</arg>
+<arg>${produto}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:33.344" endtime="20220214 18:11:33.366"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>//div[@class="inventory_item_name"] &gt;&gt; text=${produto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:33.366" endtime="20220214 18:11:34.451"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:33.321" endtime="20220214 18:11:34.451"/>
+</kw>
+<kw name="clicar botão adicionar no carrinho" library="Actions">
+<kw name="Click" library="Browser">
+<arg>xpath=//button[@class='btn btn_primary btn_small btn_inventory'] &gt;&gt; text=Add to cart</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:34.453" endtime="20220214 18:11:35.513"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:34.452" endtime="20220214 18:11:35.514"/>
+</kw>
+<kw name="clicar para voltar e listar todos os produtos" library="Actions">
+<kw name="Click" library="Browser">
+<arg>//button[@id='back-to-products']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:35.515" endtime="20220214 18:11:36.588"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:35.514" endtime="20220214 18:11:36.588"/>
+</kw>
+<kw name="clicar botão do carrinho" library="Actions">
+<kw name="Click" library="Browser">
+<arg>css=.shopping_cart_link</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:36.590" endtime="20220214 18:11:37.651"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:36.589" endtime="20220214 18:11:37.651"/>
+</kw>
+<kw name="Validar quantidade no carrinho" library="Actions">
+<arg>3</arg>
+<kw name="Get Element Count" library="Browser">
+<arg>//div[@class='cart_item']</arg>
+<arg>equal</arg>
+<arg>${quantidade}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns the count of elements found with ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:37.653" endtime="20220214 18:11:37.675"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:37.652" endtime="20220214 18:11:37.675"/>
+</kw>
+<kw name="Clicar em realizar checkout" library="Actions">
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=checkout</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220214 18:11:37.692" level="INFO">Wait for Element with selector: id=checkout</msg>
+<status status="PASS" starttime="20220214 18:11:37.676" endtime="20220214 18:11:37.692"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>id=checkout &gt;&gt; text=Checkout</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:37.692" endtime="20220214 18:11:37.715"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=checkout</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:37.715" endtime="20220214 18:11:38.774"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>id=first-name</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220214 18:11:38.792" level="INFO">Wait for Element with selector: id=first-name</msg>
+<status status="PASS" starttime="20220214 18:11:38.774" endtime="20220214 18:11:38.792"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:37.676" endtime="20220214 18:11:38.793"/>
+</kw>
+<kw name="Preencher formulário de checkout" library="Actions">
+<kw name="Click" library="Browser">
+<arg>id=first-name</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:38.794" endtime="20220214 18:11:39.829"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=first-name</arg>
+<arg>Paula</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220214 18:11:39.830" level="INFO">Fills the text 'Paula' in the given field.</msg>
+<status status="PASS" starttime="20220214 18:11:39.830" endtime="20220214 18:11:40.862"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=last-name</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:40.862" endtime="20220214 18:11:41.909"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=last-name</arg>
+<arg>Onofre</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220214 18:11:41.910" level="INFO">Fills the text 'Onofre' in the given field.</msg>
+<status status="PASS" starttime="20220214 18:11:41.909" endtime="20220214 18:11:42.942"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>id=postal-code</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:42.943" endtime="20220214 18:11:43.996"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>id=postal-code</arg>
+<arg>58000000</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20220214 18:11:43.997" level="INFO">Fills the text '58000000' in the given field.</msg>
+<status status="PASS" starttime="20220214 18:11:43.996" endtime="20220214 18:11:45.030"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:38.793" endtime="20220214 18:11:45.030"/>
+</kw>
+<kw name="clicar no botão continue" library="Actions">
+<kw name="Click" library="Browser">
+<arg>//input[@id='continue']</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:45.032" endtime="20220214 18:11:46.102"/>
+</kw>
+<status status="PASS" starttime="20220214 18:11:45.031" endtime="20220214 18:11:46.102"/>
+</kw>
+<kw name="validar recibo de pagamento" library="Actions">
+<kw name="Wait For Elements State" library="Browser">
+<arg>//div[@class='summary_info_label'][1]</arg>
+<arg>visible</arg>
+<arg>5</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220214 18:11:46.124" level="INFO">Wait for Element with selector: //div[@class='summary_info_label'][1]</msg>
+<status status="PASS" starttime="20220214 18:11:46.104" endtime="20220214 18:11:46.124"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>//div[@class='summary_info_label'][1]</arg>
+<arg>equal</arg>
+<arg>Payment Information:</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:46.124" endtime="20220214 18:11:46.145"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>//div[@class='summary_value_label'][1]</arg>
+<arg>contains</arg>
+<arg>SauceCard #31337</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:46.146" endtime="20220214 18:11:46.165"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>//div[@class='summary_info_label'][2]</arg>
+<arg>equal</arg>
+<arg>Shipping Information:</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:46.165" endtime="20220214 18:11:46.182"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>//div[@class='summary_value_label'][2]</arg>
+<arg>equal</arg>
+<arg>FREE PONY EXPRESS DELIVERY!</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:46.183" endtime="20220214 18:11:46.201"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=.summary_tax_label</arg>
+<arg>contains</arg>
+<arg>Tax: $</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:46.201" endtime="20220214 18:11:46.221"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=.summary_total_label</arg>
+<arg>contains</arg>
+<arg>Total: $</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20220214 18:11:46.221" endtime="20220214 18:11:46.238"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>1111111111111</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220214 18:11:46.238" endtime="20220214 18:11:46.239"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>aaaa</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20220214 18:11:46.239" endtime="20220214 18:11:46.239"/>
+</kw>
+<kw name="Wait For Elements State" library="Browser">
+<arg>//div[contains(text(),"Sauce Labs Bike Light")]//..//..//..//div[@class="inventory_item_price"]</arg>
+<arg>visible</arg>
+<arg>8</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20220214 18:11:54.435" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/fail-screenshot-1.png"&gt;&lt;img src="browser/screenshot/fail-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220214 18:11:54.439" level="FAIL">TimeoutError: page.waitForSelector: Timeout 8000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[contains(text(),"Sauce Labs Bike Light")]//..//..//..//div[@class="inventory_item_price"]" to be visible
+============================================================</msg>
+<status status="FAIL" starttime="20220214 18:11:46.239" endtime="20220214 18:11:54.439"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${Item001}</var>
+<arg>xpath=//div[contains(text(),"Sauce Labs Bike Light")]//..//..//..//div[@class="inventory_item_price"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.440" endtime="20220214 18:11:54.440"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${Item002}</var>
+<arg>xpath=//div[contains(text(),"Test.allTheThings() T-Shirt (Red)")]//..//..//..//div[@class="inventory_item_price"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.440" endtime="20220214 18:11:54.440"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<var>${Item003}</var>
+<arg>xpath=//div[contains(text(),"Sauce Labs Backpack")]//..//..//..//div[@class="inventory_item_price"]</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.440" endtime="20220214 18:11:54.440"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>bb</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.440" endtime="20220214 18:11:54.441"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${var001}</var>
+<arg>${Item001}</arg>
+<arg>$</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.441" endtime="20220214 18:11:54.441"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>ccc</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.441" endtime="20220214 18:11:54.441"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${var002}</var>
+<arg>${Item002}</arg>
+<arg>$</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.441" endtime="20220214 18:11:54.441"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${var003}</var>
+<arg>${Item003}</arg>
+<arg>$</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.441" endtime="20220214 18:11:54.441"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${SOMA}</var>
+<arg>float(${Item001}) + float(${Item002} + float(${Item003})</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.442" endtime="20220214 18:11:54.442"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>44444</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.442" endtime="20220214 18:11:54.442"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>A soma desses infeliz:${SOMA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220214 18:11:54.442" endtime="20220214 18:11:54.442"/>
+</kw>
+<status status="FAIL" starttime="20220214 18:11:46.103" endtime="20220214 18:11:54.443"/>
 </kw>
 <kw name="Finalizando sessão" library="Base" type="TEARDOWN">
 <kw name="Screenshot Name" library="Users">
 <var>${shot_name}</var>
-<msg timestamp="20220213 18:23:11.596" level="INFO">${shot_name} = aa74d504400515eb1473ad8b7c473683b3547c3f</msg>
-<status status="PASS" starttime="20220213 18:23:11.595" endtime="20220213 18:23:11.596"/>
+<msg timestamp="20220214 18:11:54.446" level="INFO">${shot_name} = 1e6953c2632f715f4f52dadc1ac71bf16cebc918</msg>
+<status status="PASS" starttime="20220214 18:11:54.445" endtime="20220214 18:11:54.446"/>
 </kw>
 <kw name="Take Screenshot" library="Browser">
 <arg>fullPage=True</arg>
 <arg>filename=${shot_name}</arg>
 <tag>PageContent</tag>
 <doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
-<msg timestamp="20220213 18:23:13.857" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/aa74d504400515eb1473ad8b7c473683b3547c3f.png"&gt;&lt;img src="browser/screenshot/aa74d504400515eb1473ad8b7c473683b3547c3f.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220213 18:23:11.596" endtime="20220213 18:23:13.857"/>
+<msg timestamp="20220214 18:11:56.731" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/1e6953c2632f715f4f52dadc1ac71bf16cebc918.png"&gt;&lt;img src="browser/screenshot/1e6953c2632f715f4f52dadc1ac71bf16cebc918.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220214 18:11:54.446" endtime="20220214 18:11:56.731"/>
 </kw>
-<status status="PASS" starttime="20220213 18:23:11.595" endtime="20220213 18:23:13.857"/>
+<status status="PASS" starttime="20220214 18:11:54.444" endtime="20220214 18:11:56.731"/>
 </kw>
-<tag>usr_ok</tag>
-<status status="PASS" starttime="20220213 18:23:00.204" endtime="20220213 18:23:13.859"/>
+<doc>CT para realização de login com dados válidos
+e adicionar pelo menos 3 itens e validar carrinho</doc>
+<tag>3_itens</tag>
+<status status="FAIL" starttime="20220214 18:11:17.314" endtime="20220214 18:11:56.732">TimeoutError: page.waitForSelector: Timeout 8000ms exceeded.
+=========================== logs ===========================
+waiting for selector "//div[contains(text(),"Sauce Labs Bike Light")]//..//..//..//div[@class="inventory_item_price"]" to be visible
+============================================================</status>
 </test>
-<doc>Minha primeira suite de teste
-Testando a página principal.</doc>
-<status status="PASS" starttime="20220213 18:22:59.134" endtime="20220213 18:23:13.978"/>
+<doc>Minha primeira suíte de teste do site https://www.saucedemo.com/
+Testando a primeira página.
+https://www.saucedemo.com/</doc>
+<status status="FAIL" starttime="20220214 18:11:16.243" endtime="20220214 18:11:56.977"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">usr_ok</stat>
+<stat pass="0" fail="1" skip="0">3_itens</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Home">Home</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="User">User</stat>
 </suite>
 </statistics>
 <errors>
